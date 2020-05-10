@@ -168,7 +168,13 @@ isim ve parola ile satırı aşağıdaki gibi güncelleriz:
 ```
 SQLALCHEMY_DATABASE_URI = 'postgresql://flask_ornek_kullanici:32319ae795b57d2e61b105dfd6f7b99061c04d93@localhost:5432/flask_ornek'
 ```
+## Mysql 
+Eğer mysql kullanmak istiyorsanız , config dosyasında ,
+ #SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/dbname' # işaretini silip kullanıcı adı ,parola,veritabanı ismini yazıp.
+" sudo apt install libmysqlclient-dev" yazarak ek paketleri indirelim.
 
+
+#### NOT: Eğer mysql kullanmayacak iseniz mysqlclient'i siliniz!
 ## Veritabanı Tablolarının Oluşturulması
 
 Uygulamada kullanılacak olan tablolar, app/models.py dosyasının içinde sınıf şeklinde 
